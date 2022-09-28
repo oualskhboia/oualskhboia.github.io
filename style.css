@@ -1,0 +1,328 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #F5EFE6;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box
+}
+
+h1 {
+  /*YOUR NAME*/
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 800;
+  font-size: 4em;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 2rem;
+  color: #AEBDCA;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+	line-height: 2;
+}
+
+h3 {
+  margin: 0;
+  font-weight: 400;
+  color: grey;
+}
+
+/*NAVBAR*/
+.navbar {
+  background-color: #7895B2;
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  font-weight: 200;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
+}
+
+/*JUMBOTRON*/
+.header {
+  height: 100vh;
+  background: #7895B2;
+  margin-bottom: 0; 
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header-text {
+  /*TAGLINE UNDER NAME*/
+  font-weight: 400;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.header p {
+  margin: 0;
+}
+
+/*ARROW LINK*/
+#down-arrow {
+  /*position: absolute;
+  width: 100%;*/
+  margin-top: auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#down-arrow a {
+  color: white;
+}
+
+/*CONTENT*/
+.container {
+  /*sets up flexbox*/
+  display: flex;
+  flex-direction: column;
+  background: #F5EFE6;
+}
+
+.row {
+  display: flex;
+}
+
+.main-content {
+  flex: 0 0 66.6%;
+  margin: 2rem auto 3rem auto;
+}
+
+
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+}
+
+
+.content-body {
+  line-height: 1.5;
+  color: rgba(0,0,0,.75);
+}
+
+.content-body p {
+  width: 60%;
+  margin: auto;
+}
+
+/*EDUCATION*/
+.experience {
+  width: 90%;
+	margin: 100px auto 100px auto;
+	text-align: left;
+}
+
+.teacher-img {
+  width: 20%;
+	float: left;
+	margin-right: 30px;
+}
+
+.it-img {
+  width: 20%;
+	float: right;
+	margin-left: 30px;
+}
+
+.job-title {
+  float: right;
+}
+
+/*PROJECTS*/
+/* cards */
+:root {
+  font-size: 16px;
+  --card-img-height: 200px;
+}
+.card-container {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  margin: auto;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms ease-in-out;
+}
+.card {
+  align-self: flex-start;
+  position: relative;
+  width: 325px;
+  height: 380px;
+  min-width: 275px;
+  margin: 1.25rem 0.75rem;
+  background: #7895B2;
+  transition: all 300ms ease-in-out;
+  border-radius: 10px;
+}
+
+.card .card-img {
+  visibility: hidden;
+  width: 100%;
+  height: var(--card-img-height);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.card .card-img-hovered {
+  --card-img-hovered-overlay: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  transition: all 350ms ease-in-out;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  position: absolute;
+  height: var(--card-img-height);
+  top: 0;
+  border-radius: 10px;
+}
+
+.card .card-info {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  transition: all 200ms ease-in-out;
+}
+
+.card .card-info .card-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  transition: all 200ms ease-in-out;
+}
+
+.card .card-info .card-about .card-tag {
+  padding: 0.2rem 0.5rem;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #505f79;
+  color: #fff;
+  transition: all 250ms ease-in-out;
+}
+.card .card-info .card-about .card-tag.tag-news {
+  background: #36b37e;
+}
+.card .card-info .card-about .card-tag.tag-deals {
+  background: #ffab00;
+}
+.card .card-info .card-about .card-tag.tag-politics {
+  width: 71px;
+  background: #ff5630;
+}
+.card .card-info .card-title {
+  z-index: 10;
+  font-size: 1.5rem;
+  padding-bottom: 0.75rem;
+  transition: all 350ms ease-in-out;
+}
+.card .card-info .card-creator {
+  padding-bottom: 0.75rem;
+  transition: all 250ms ease-in-out;
+}
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0px 15px 35px rgba(227, 252, 239, 0.1), 0px 5px 15px rgba(0, 0, 0, 0.07);
+  transform: scale(1.025);
+}
+.card:hover .card-img-hovered {
+  --card-img-hovered-overlay: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.65));
+  height: 100%;
+}
+
+.card:hover .card-info {
+  background-color: transparent;
+}
+
+.card:hover .card-tag {
+  opacity: 0;
+}
+
+.card:hover .card-title {
+  color: #ebecf0;
+  transform: translate(0, 40px);
+}
+.card-1 .card-img, .card-1 .card-img-hovered {
+  background-image: var(--card-img-hovered-overlay), url(https://techmoran.com/wp-content/uploads/2021/02/Twitter.jpg);
+}
+.card-2 .card-img, .card-2 .card-img-hovered {
+  background-image: var(--card-img-hovered-overlay), url(https://miro.medium.com/max/750/0*XMbwmj-4r80bBuIg.jpg);
+}
+.card-3 .card-img, .card-3 .card-img-hovered {
+  background-image: var(--card-img-hovered-overlay), url(images/oosd.png);
+}
+
+
+/*SKILLS*/
+.ul-skills {
+  text-align: center;
+  padding-left: 0;
+}
+
+.li-skills {
+  display: inline-block;
+  margin: 7px;
+  padding: 5px 10px;
+  color: white;
+  background: #7895B2;
+  list-style: none;
+  cursor: default;
+  font-size: 1.2em;
+  border-radius: 25px;
+}
+
+.white-text {
+  color: white;
+}
+
+
+/*SOCIAL LINKS*/
+.ul-social {
+  text-align: center;
+  padding-left: 0;
+}
+
+.li-social-links {
+  display: inline-block;
+  list-style: none;
+}
+
+.social {
+  font-size: 2em;
+  color: #7895B2;
+  padding: 20px;
+}
+
+.copyright {
+	font-size: 0.75rem;
+	padding: 20px 0;
+  margin: auto;
+  width: 150px;
+}
