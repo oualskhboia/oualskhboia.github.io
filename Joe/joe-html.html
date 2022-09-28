@@ -2,21 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
-
     <title>About Joe Xu</title>
-    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/NoirJ0e/Hackiethon2022/master/src/images/favicon.png">
-
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+      <!-- local css and javascript functions -->
+    <link rel="stylesheet" href="style-joe.css">
+      <script src="./main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sacramento&family=Ubuntu&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="./style.css">
-    <script src="./main.js"></script>
-
-    <!-- <link rel="stylesheet" href="https://raw.githubusercontent.com/NoirJ0e/Hackiethon2022/master/src/style.css"> -->
-    <!-- <script src="https://raw.githubusercontent.com/NoirJ0e/Hackiethon2022/master/src/main.js"></script> -->
-
   </head>
   <body>
 
@@ -29,6 +23,7 @@
       <a href="#skills" class="navbar-text hover-underline-animation">Skills</a>
       <a href="#interests" class="navbar-text hover-underline-animation">Interests</a>
       <a href="#contact" class="navbar-text hover-underline-animation">Contact</a>
+
       <!-- Hamburger menu -->
       <a href="javascript:void(0);" class="icon" onclick="hambergerMenu()">
         <i class="fa fa-bars"></i>
@@ -40,8 +35,8 @@
       <!-- HEADER -->
       <div class="header">
         <div class="header-text">
-          <h1 class="major-content-font-colour">Hi, it's Joe Xu</h1>
-          <p class="major-content-font-colour">Freshman Students in UniMelb</p>
+          <h1 class="name-title">Joe Xu</h1>
+          <p class="major-content-font-colour">First year student at the University of Melbourne</p>
         </div>
 
         <div id="down-arrow">
@@ -54,15 +49,15 @@
       <div class="main-content">
         <div class="content-header">
           <a class="anchor" name="about"></a>
-          <h2>About</h2>
+          <h2 class="about-header">About</h2>
         </div>
         <div class="content-body">
-            <p>Greetings, I'm Joe Xu, a cantonese student from Mainland China who majors in Computing and Software
-              System</p>
-            <p>In my opinion, I am an individual who is passionate about technology and has the commitment to use modern
+            <p>Greetings, I'm Joe Xu, a Cantonese student from Mainland China who majors in Computing and Software
+              Systems.</p>
+            <p>I am an individual who is passionate about technology and has the commitment to use modern
               technology to benefit the world in a positive way</p>
-            <p>I <b>LOVE </b>the open source community and hope I can contribute something to it one day</p>
-            <p>Aside from learning, I love to enjoy the content of Ninth Arts<sup>video games</sup>. I used to be a PC
+            <p>I <b>love </b>the open source community and hope I can contribute something to it one day</p>
+            <p>Aside from learning, I love to enjoy the content of Ninth Arts video games. I used to be a PC
               gamer, but I did not bring the computer with me to Melbourne, so I became a switch player.</p>
         </div>
       </div>
@@ -73,22 +68,19 @@
         <div class="main-content">
           <div class="content-header">
             <a class="anchor" name="experience"></a>
-            <h2>Experience</h2>
+            <h2 class="content-header">Experience</h2>
           </div>
 
           <!-- CARD #1 -->
           <div class="content-body">
             <div class="experience">
-              <img class="seven-eleven-img" src="https://raw.githubusercontent.com/NoirJ0e/Hackiethon2022/master/src/images/seven-eleven-img.png">
-              <h3>7-Eleven, Inc <span class="job-title">Store Manager(Part-Time)</span></h3>
+              <img class="seven-eleven-img" src="./images/seven-eleven-img.png">
+              <h3>7-Eleven, Inc | Store Manager (Part-Time)</h3>
               <ul>
-                <li>
-                Joined the company since 2022/01/15, start from the part-time store member since I have to balance the
-                workload and study load. Quickly absorb skills required to run the store including material control,
-                marketing predicting and scheduling working hours for other team members and so on. Under the
-                recommendation of the store owner and manager, after successfully passed the exam, I have been
-                successfully upgrade to store manager while my working experience is only two months. Leave the company
-                in July, 2022 in order to flight to and learn in Melbourne.
+                <li> 01/15/2022-07/2022, part-time during full-time study</li>
+                <li>Quickly absorbed skills required to run the store including material control,
+                    marketing predicting and scheduling working hours for other team members and so on </li>
+                <li>Successfully promoted to store manager while my working experience is only two months. </li>
                 </li>
               </ul>
             </div>
@@ -103,16 +95,16 @@
         <div class="main-content">
           <div class="content-header">
             <a class="anchor" name="education"></a>
-            <h2>Education</h2>
+            <h2 class="content-header">Education</h2>
           </div>
           <div class="content-body">
 
             <!-- EDUCATION 1 -->
             <div class="experience">
-              <h3>University of Melbourne<span class="job-title">Since 2022/02/28</span></h3>
+              <h3>University of Melbourne | 2022 - 2024</h3>
               <ul>
                 <li>
-                  Joined this university as an undergraduate science students(Bachelor of Science) since 2022/02/28
+                    Bachelor of Science majoring in Computing and Software Systems
                 </li>
               </ul>
             </div>
@@ -125,13 +117,13 @@
         <div class="main-content">
           <div class="content-header">
             <a class="anchor" name="projects"></a>
-            <h2>Projects</h2>
+            <h2 class="content-header">Projects</h2>
           </div>
         </div>
-        <img src="https://raw.githubusercontent.com/NoirJ0e/Hackiethon2022/master/src/images/projects.png" class="project-img" />
+        <img src="./images/projects.png" class="project-img" />
         <p>
-          <center>Unfortunately, I do not currently have a project to work on, I hope I will be able to improve my
-            ability to code and find a place in the near future where my code can be of assistance.</center>
+          <center>Unfortunately, I do not currently have a project to work on. I hope I will be able to improve my
+            ability to code in the near future.</center>
         </p>
       
 
@@ -145,10 +137,10 @@
         <div class="main-content">
           <div class="content-header">
             <a class="anchor" name="interests"></a>
-            <h2>Interests</h2>
+            <h2 class="content-header">Interests</h2>
           </div>
           <div class="gaming">
-            <img class="controller-img" src="https://raw.githubusercontent.com/NoirJ0e/Hackiethon2022/master/src/images/controller.png" />
+            <img class="controller-img" src="./images/controller.png" />
             <h3>Gaming</h3>
 
             <ul>
@@ -173,7 +165,7 @@
             </ul>
 
             <div class="streaming">
-              <img class="streaming-img" src="https://raw.githubusercontent.com/NoirJ0e/Hackiethon2022/master/src/images/streaming.png" />
+              <img class="streaming-img" src="./images/streaming.png" />
                 <br>
                 <br>
                 <br>
@@ -196,7 +188,7 @@
 
                 <br>
             <div class="reading">
-              <img class="book-img" src="https://raw.githubusercontent.com/NoirJ0e/Hackiethon2022/master/src/images/book.png" />
+              <img class="book-img" src="./images/book.png" />
                 <br>
                 <br>
                 <br>
@@ -221,7 +213,7 @@
         <div class="main-content">
           <div class="content-header">
             <a class="anchor" name="skills"></a>
-            <h2>Skills</h2>
+            <h2 class="content-header">Skills</h2>
           </div>
           <div class="content-body">
             <ul class="ul-skills">
@@ -238,7 +230,7 @@
       <div class="main-content">
         <div class="content-header">
           <a class="anchor" name="contact"></a>
-          <h2>Contact Me</h2>
+          <h2 class="content-header">Contact Me</h2>
         </div>
         <div class="content-body">
           <div class="jumbotron-social">
